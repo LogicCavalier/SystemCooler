@@ -1,0 +1,88 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build System Cooler Daemon Project",
+      "type": "cargo",
+      "command": "build",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "detail": "Compiles the System Cooler Daemon project using cargo build"
+    },
+    {
+      "label": "Test System Cooler Daemon Project",
+      "type": "cargo",
+      "command": "test",
+      "group": {
+        "kind": "test",
+        "isDefault": false
+      },
+      "detail": "Runs tests for the System Cooler Daemon project"
+    },
+    {
+      "label": "Lint System Cooler Daemon Project",
+      "type": "shell",
+      "command": "cargo clippy",
+      "problemMatcher": "$rustc",
+      "detail": "Runs lint for the System Cooler Daemon project"
+    },
+    {
+      "label": "Clean System Cooler Daemon Project",
+      "type": "cargo",
+      "command": "clean",
+      "group": {
+        "kind": "build",
+        "isDefault": false
+      },
+      "problemMatcher": [],
+      "detail": "Clean the build artifacts of System Cooler Daemon Project"
+    },
+    {
+      "label": "Check System Cooler Daemon Project",
+      "type": "cargo",
+      "command": "check",
+      "group": {
+        "kind": "build",
+        "isDefault": false
+      },
+      "problemMatcher": [
+        "$rustc"
+      ],
+      "detail": "Check the System Cooler Daemon Project for errors without building it."
+    },
+    {
+      "label": "Rustdoc System Cooler Daemon Project",
+      "type": "cargo",
+      "command": "rustdoc",
+      "args": [
+        "--",
+        "--document-private-items"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": false
+      },
+      "problemMatcher": [],
+      "detail": "Generate documentation for the System Cooler Daemon Project."
+    },
+    {
+      "label": "Format System Cooler Daemon Project",
+      "type": "cargo",
+      "command": "fmt",
+      "problemMatcher": [],
+      "detail": "Format the System Cooler Daemon Project."
+    },
+    {
+      "label": "Fix System Cooler Daemon Project",
+      "type": "cargo",
+      "command": "fix",
+      "args": [
+        "--allow-dirty"
+      ],
+      "problemMatcher": [],
+      "detail": "Automatically fix common issues in the System Cooler Daemon Project."
+    }
+  ]
+}

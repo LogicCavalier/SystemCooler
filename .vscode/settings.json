@@ -1,0 +1,53 @@
+{
+    // Editor appearance and behavior
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+    "editor.rulers": [
+        128,
+        120
+    ],
+    "editor.formatOnSave": true,
+    "editor.wordWrap": "on",
+    "editor.renderWhitespace": "all",
+    "editor.minimap.enabled": true,
+    // Files and auto-save settings
+    "files.autoSave": "afterDelay",
+    "files.exclude": {
+        "**/out": true,
+        "**/target": true,
+        "**/*.rs.bk": true,
+        "**/.git": true,
+        "**/.DS_Store": true
+    },
+    // Explorer settings
+    "explorer.confirmDelete": true,
+    "explorer.sortOrder": "default",
+    // Rust analyzer settings
+    "rust-analyzer.cargo.autoreload": true,
+    "rust-analyzer.procMacro.enable": true,
+    "rust-analyzer.cargo.features": [
+        "default"
+    ],
+    "rust-analyzer.cargo.buildScripts.enable": true,
+    "rust-analyzer.diagnostics.enable": true,
+    // Code linting and suggestions
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": false,
+        "strings": true
+    },
+    // Terminal settings
+    "terminal.integrated.scrollback": 8192,
+    "terminal.integrated.cursorStyleInactive": "underline",
+    // Tasks auto-detection
+    "task.autoDetect": "on",
+    // Debugging configurations for Rust
+    "[rust]": {
+        "editor.defaultFormatter": "rust-lang.rust-analyzer",
+        "editor.formatOnSave": true
+    },
+    // Workspace-specific settings
+    "workbench.editor.enablePreview": false,
+    "workbench.startupEditor": "newUntitledFile",
+    "terminal.integrated.cursorStyle": "underline"
+}

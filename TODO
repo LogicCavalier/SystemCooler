@@ -1,0 +1,15 @@
+0) Resolve Warnings!
+1) Use Daemonize library in related module
+3) Use EventRecoder to log Daemon events
+4) Make Daemon Multi-thread if it will make Daemon more efficient.
+5) Write Standard Rust tests for all modules
+6) Extract dependencies to make Deb for debian-based distros (Now, Raspbian & Ubuntu)
+7) Extract dependencies to make RPM for redhat-based distros (Now, Fedora & Rocky)
+8) Setup PPA
+9) Setup RPM Repo
+10) Add X86_64 support
+11) Add MS-Windows support
+12) Add Peltier Cooler (Thermoelectric Cooler) Support
+13) Leverage more features from Cargo to automate the build and deployment process
+14) Rename systemcoolerd to syscoold likewise syscoolctl, syscoolui
+15) Add syscoolctl support

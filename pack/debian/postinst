@@ -1,0 +1,20 @@
+#!/bin/bash
+
+set -e
+
+echo "[ INFO ] Configuring PWM for System Cooler Daemon ..."
+
+# Enable PWM via device tree overlay
+if ! grep -q '^dtoverlay=pwm-2chan' /boot/config.txt; then
+  echo "dtoverlay=pwm-2chan" >> /boot/firmware/config.txt
+  echo "[ INFO ] PWM enabled in /boot/firmware/config.txt"
+fi
+
+echo "[ INFO ] Reloading boot configuration..."
+/usr/sbin/update-initramfs -u
+
+echo "[ INFO ] Enabling and starting the System cooler Daemon ..."
+systemctl enable systemcoolerd.service
+systemctl start systemcoolerd.service
+
+exit 0

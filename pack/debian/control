@@ -1,0 +1,8 @@
+Package: systemcoolerd
+Version: 1.0.0
+Architecture: armhf
+Maintainer: Mohammad Moslemi AbarGhan <Mohammad.Moslemi.AbarGhan@gmail.com>
+Depends: libc6, lsb-base
+Description: Raspberry Pi Fan Controller Daemon
+ A daemon to control the system cooling of a Raspberry Pi based on CPU temperature.
+ Features include configurable fan speed control algorithms, network monitoring, and Systemd compatibility.

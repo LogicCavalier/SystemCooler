@@ -1,0 +1,18 @@
+[package]
+name = "systemcoolerd"
+version = "0.1.0"
+edition = "2021"
+authors = ["Logic.Cavalier <Mohammad.Moslemi.AbarGhan@gmail.com>"]
+description = "System Cooler Daemon"
+readme = "README.md"
+
+[[bin]]
+name = "systemcoolerd"
+path = "src/main.rs"
+
+[dependencies]
+signal-hook = "0.3"
+chrono = "0.4"
+syslog = "5.0"
+configparser = "3.0.5"
+sysinfo = "0.29"

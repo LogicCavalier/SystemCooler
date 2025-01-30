@@ -1,0 +1,15 @@
+[Unit]
+Description=System Cooler Daemon
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/systemcoolerd -c /etc/systemcooler/daemon/conf.ini
+Restart=on-failure
+ExecStop=/usr/bin/systemcoolerd --shutdown
+StandardOutput=journal
+StandardError=journal
+User=root
+Group=root
+
+[Install]
+WantedBy=multi-user.target
